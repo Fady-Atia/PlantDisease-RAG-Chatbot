@@ -1,0 +1,15 @@
+==> 2025-06-30 15:11:52 <==
+# cmd: C:\Users\fadys\anaconda3\Scripts\conda-script.py create -p myenv python==3.8 -y
+# conda version: 24.3.0
++conda-forge/noarch::ca-certificates-2025.6.15-h4c7d964_0
++conda-forge/noarch::pip-24.3.1-pyh8b19718_0
++conda-forge/noarch::setuptools-75.3.0-pyhd8ed1ab_0
++conda-forge/noarch::wheel-0.45.1-pyhd8ed1ab_0
++conda-forge/win-64::libsqlite-3.50.2-hf5d6505_0
++conda-forge/win-64::openssl-1.1.1w-hcfcfb64_0
++conda-forge/win-64::python-3.8.0-hc9e8b01_5
++conda-forge/win-64::sqlite-3.50.2-hdb435a2_0
++conda-forge/win-64::ucrt-10.0.22621.0-h57928b3_1
++conda-forge/win-64::vc-14.3-h41ae7f8_26
++conda-forge/win-64::vc14_runtime-14.44.35208-h818238b_26
+# update specs: ['python==3.8']
