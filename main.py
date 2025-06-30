@@ -1,6 +1,7 @@
 from dotenv import load_dotenv
 load_dotenv()
-from fastapi import FastAPI, Request
+from fastapi import FastAPI
+from pydantic import BaseModel
 from fastapi.responses import StreamingResponse
 import pandas as pd
 import faiss
@@ -8,6 +9,7 @@ from sentence_transformers import SentenceTransformer
 import cohere
 import asyncio
 import os
+
 
 # --------- Singleton Classes ---------
 class EmbeddingSingleton:
@@ -55,6 +57,10 @@ class CohereSingleton:
         return cls._client
 
 # --------- FastAPI App ---------
+
+class AskRequest(BaseModel):
+    question: str
+
 app = FastAPI()
 
 @app.get("/")
@@ -62,9 +68,9 @@ def root():
     return {"message": "Chatbot API is running"}
 
 @app.post("/ask")
-async def ask(request: Request):
-    data = await request.json()
-    question = data.get("question", "")
+async def ask(request: AskRequest):
+    question = request.question
+
 
     # Get Singleton instances
     embedding_model = EmbeddingSingleton.get_model()
