@@ -29,6 +29,7 @@ The aim of this project is to make it easier for anyone to use our application t
 ---
 
 ## 📂 Project Structure  
+
 ├── main.py # FastAPI application
 ├── data/
 │ └── plant_diseases_treatment.csv # Dataset (plants, diseases, treatments)
@@ -64,7 +65,7 @@ The dataset should be a CSV file with the following columns:
 📡 API Endpoints
 ✅ Root Endpoint
 
-GET /
+## GET /
 
 {
   "message": "Chatbot API is running"
@@ -72,7 +73,7 @@ GET /
 
 🌿 Ask Question
 
-POST /ask
+## POST /ask
 
 Request
 {
@@ -85,7 +86,7 @@ Response
 }
 
 
-🧪 Example Workflow
+# 🧪 Example Workflow
 
 User asks:
 
