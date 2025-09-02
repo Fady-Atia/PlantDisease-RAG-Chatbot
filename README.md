@@ -45,7 +45,7 @@ The aim of this project is to make it easier for anyone to use our application t
 Create a `.env` file in the project root and add your **Cohere API key**:  
 
 ```env
-API_KEY=your_cohere_api_key_here
+API_KEY=cohere_api_key_here
 ```
 
 📊 Dataset Format
