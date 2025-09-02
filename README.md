@@ -29,13 +29,15 @@ The aim of this project is to make it easier for anyone to use our application t
 ---
 
 ## 📂 Project Structure  
-
-├── main.py # FastAPI application
+```
+├── main.py                       # FastAPI application
 ├── data/
-│ └── plant_diseases_treatment.csv # Dataset (plants, diseases, treatments)
-├── .env # API keys and environment variables
-├── requirements.txt # Dependencies
-└── README.md # Project documentation
+│   └── plant_diseases_treatment.csv   # Dataset (plants, diseases, treatments)
+├── .env                          # API keys and environment variables
+├── requirements.txt              # Dependencies
+└── README.md                     # Project documentation
+```
+
 
 ---
 
